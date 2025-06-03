@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const navItems = {
     "/" : {
-        name: "Sean Cotter",
+        name: "Home",
     },
     "/about": {
         name: "About",
@@ -19,8 +19,8 @@ export default function Navbar() {
     return (
         <aside>
             <div>
-                <nav>
-                    <div>
+                <nav className="flex items-center justify-center ">
+                    <div className="flex gap-6">
                         {Object.entries(navItems).map(([path, { name }]) => {
                             return (
                                 <Link
