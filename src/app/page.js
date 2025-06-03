@@ -16,10 +16,10 @@ export default function Home() {
       }}
     >
       <main className={styles.main}>
-        <div class="@container">
-          <div class="flex flex-col gap-2 text-left">
-            <h1 class="text-white text-4xl font-bold">Sean Cotter</h1>
-            <h2 class="text-white text-2xl leading-tight">Software Engineer & Android Developer</h2>
+        <div className="@container">
+          <div className="flex flex-col gap-2 text-left">
+            <h1 className="text-white text-4xl font-bold">Sean Cotter</h1>
+            <h2 className="text-white text-2xl leading-tight">Software Engineer & Android Developer</h2>
           </div>
         </div>
         <ol>
