@@ -4,23 +4,24 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <header>
-        <nav className={styles.header}>
-          <Link href="#about">Projects</Link>
-          <a href="#about">About Me</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+    <div
+      className={styles.page}
+      style={{
+        backgroundImage: "url(/picture_background.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        minHeight: "100vh",
+        width: "100vw",
+      }}
+    >
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
+        <div class="@container">
+          <div class="flex flex-col gap-2 text-left">
+            <h1 class="text-white text-4xl font-bold">Sean Cotter</h1>
+            <h2 class="text-white text-2xl leading-tight">Software Engineer & Android Developer</h2>
+          </div>
+        </div>
         <ol>
           <li>
             Get started by editing <code>src/app/page.js</code>.
