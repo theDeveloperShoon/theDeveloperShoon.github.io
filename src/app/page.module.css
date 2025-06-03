@@ -166,3 +166,25 @@ a.secondary {
     filter: invert();
   }
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  background: #181818;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 0 0 12px 12px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.header a:hover {
+  color: #61dafb;
+}
