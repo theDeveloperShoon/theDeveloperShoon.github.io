@@ -17,23 +17,22 @@ const navItems = {
 
 export default function Navbar() {
     return (
-        <aside>
-            <div>
-                <nav className="flex items-center justify-center ">
-                    <div className="flex gap-6">
-                        {Object.entries(navItems).map(([path, { name }]) => {
-                            return (
-                                <Link
-                                    key={path}
-                                    href={path}
-                                    >
-                                        {name}
-                                    </Link>
-                            )
-                        })}
-                    </div>
-                </nav>
-            </div>
-        </aside>
+        <header className="z-[999] relative">
+            <nav className="flex fixed left-1/2 h-16 -translate-x-1/2 px-4 bg-white/80 backdrop-blur-md shadow-md rounded-full">
+                <div className="flex items-center justify-center gap-6 ">
+                    {Object.entries(navItems).map(([path, { name }]) => {
+                        return (
+                            <Link
+                                className="flex w-full items-center justify-center text-white hover:text-gray-950"
+                                key={path}
+                                href={path}
+                                >
+                                    {name}
+                                </Link>
+                        )
+                    })}
+                </div>
+            </nav>
+        </header>
     )
 }
