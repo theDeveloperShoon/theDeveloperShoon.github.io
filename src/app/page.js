@@ -102,22 +102,3 @@ export default function Home() {
     </div>
   );
 }
-
-// export default function NewHome(){
-//   return (
-//     <div className={styles.page}>
-//       <main className={styles.main}>
-//         <header className={styles.header}>
-//           <div>
-//             <a>Projects</a>
-//             <a>About Me</a>
-//             <a>Contact</a>
-//           </div>
-//         </header>
-//         <h1>Sean Cotter</h1>
-
-//         <p>This is a new version of the home page.</p>
-//       </main>
-//     </div>
-//   );
-// }
