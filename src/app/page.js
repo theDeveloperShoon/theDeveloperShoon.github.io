@@ -62,23 +62,32 @@ export default function Home() {
         </main>
         <footer className={styles.footer}>
           <a
-            href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#about-me"
+            className="cursor-pointer flex flex-col items-center"
           >
-            <Image
+            {/* <Image
               aria-hidden
               src="/globe.svg"
               alt="Globe icon"
               width={16}
               height={16}
-            />
-            Go to nextjs.org →
+            /> */}
+            Read More About Me
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="mt-1 animate-bounce"
+            >
+              <path d="M12 16l-6-6h12l-6 6z" fill="currentColor" />
+            </svg>
           </a>
         </footer>
       </div>
       <div>
-        <div className="flex flex-col px-[1.50rem] py-10 bg-gray-700">
+        <div id="about-me" className="flex flex-col px-[1.50rem] py-10 bg-gray-700">
           <h2 className="text-2xl mb-4 max-w-2xl pb-10 tracking-widest">ABOUT ME</h2>
           <p className="text-lg text-white-700 max-w-2xl">
             I am a Software Engineer with a passion for Android development and web technologies.
@@ -92,9 +101,16 @@ export default function Home() {
         <div className="flex flex-col px-[1.50rem] py-10 bg-gray-800 text-white">
           <h2 className="text-2xl mb-4 max-w-2xl pb-10 tracking-widest">FEATURED PROJECTS</h2>
           <div className="flex flex-col gap-3 pb-3">
-            <div>
-              {/* Supposed to be image here */}
-            </div>
+            <a
+              href="https://github.com/theDeveloperShoon/DataLift"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div 
+                className="w-1/2 bg-center bg-no-repeat aspect-video bg-cover rounded-lg hover:opacity-80 transition-opacity duration-200"
+                style={{ backgroundImage: "url('/dataliftscreenshot-left.jpg')" }}
+              />
+            </a>
             <div>
               <a
                 href="https://github.com/theDeveloperShoon/DataLift"
