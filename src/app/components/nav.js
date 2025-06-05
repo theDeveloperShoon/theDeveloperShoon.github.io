@@ -19,7 +19,7 @@ export default function Navbar() {
     return (
         <header className="z-[999] relative">
             <nav className="flex fixed top-[0.15rem] left-1/2 h-16 -translate-x-1/2 px-4 bg-white/80 backdrop-blur-md shadow-md rounded-full">
-                <div className="flex items-center justify-center gap-6 ">
+                <div className="flex items-center justify-center gap-1 sm:gap-4">
                     {Object.entries(navItems).map(([path, { name }]) => {
                         return (
                             <Link
