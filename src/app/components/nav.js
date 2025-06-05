@@ -23,7 +23,7 @@ export default function Navbar() {
                     {Object.entries(navItems).map(([path, { name }]) => {
                         return (
                             <Link
-                                className="flex w-full items-center justify-center text-white hover:bg-gray-300 rounded-full px-2"
+                                className="flex w-full items-center justify-center text-black hover:bg-gray-300 rounded-full px-2"
                                 key={path}
                                 href={path}
                                 >
