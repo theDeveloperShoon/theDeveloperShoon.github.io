@@ -58,7 +58,7 @@ export default function Home() {
               Read our docs
             </a>
           </div> */}
-          
+
         </main>
         <footer className={styles.footer}>
           <a
@@ -96,7 +96,13 @@ export default function Home() {
               {/* Supposed to be image here */}
             </div>
             <div>
-              <p className="text-base font-medium leading-normal">Datalift</p>
+              <a
+                href="https://github.com/theDeveloperShoon/DataLift"
+                target="_blank"
+                rel="noopener"
+              >
+                <p className="text-base font-medium leading-normal">Datalift</p>
+              </a>
               <p className="text-sm font-normal text-gray-400">
                 An Android app that helps you track your data usage and manage your data plans.
                 </p>
